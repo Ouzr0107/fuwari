@@ -1,0 +1,139 @@
+/*!
+ * Modified from GitHub's Dark Dimmed theme, licensed under the MIT License
+ * Copyright (c) 2018 GitHub Inc.
+ * https://github.com/primer/primitives/blob/main/LICENSE
+ */
+main {
+  --color-prettylights-syntax-comment: #6b8294; /* Soft blue-gray for comments */
+  --color-prettylights-syntax-constant: #4a90e2; /* Bright blue for constants */
+  --color-prettylights-syntax-entity: #81a1c1; /* Light blue for entities */
+  --color-prettylights-syntax-storage-modifier-import: #d8e2eb; /* Very light blue for modifiers */
+  --color-prettylights-syntax-entity-tag: #88c0d0; /* Cyan for tags */
+  --color-prettylights-syntax-keyword: #d08770; /* Soft coral for keywords */
+  --color-prettylights-syntax-string: #8abeff; /* Light blue for strings */
+  --color-prettylights-syntax-variable: #e5c07b; /* Sandy yellow for variables */
+  --color-prettylights-syntax-brackethighlighter-unmatched: #bf616a; /* Muted red for unmatched brackets */
+  --color-prettylights-syntax-invalid-illegal-text: #eceff4; /* Off-white for illegal text */
+  --color-prettylights-syntax-invalid-illegal-bg: #992222; /* Dark red for illegal background */
+  --color-prettylights-syntax-carriage-return-text: #eceff4; /* Off-white for carriage return text */
+  --color-prettylights-syntax-carriage-return-bg: #a33; /* Muted red for carriage return background */
+  --color-prettylights-syntax-string-regexp: #88c0d0; /* Cyan for regex */
+  --color-prettylights-syntax-markup-list: #ebcb8b; /* Sandy yellow for lists */
+  --color-prettylights-syntax-markup-heading: #5e81ac; /* Muted blue for headings */
+  --color-prettylights-syntax-markup-italic: #d8e2eb; /* Very light blue for italic */
+  --color-prettylights-syntax-markup-bold: #d8e2eb; /* Very light blue for bold */
+  --color-prettylights-syntax-markup-deleted-text: #f4d7d7; /* Light red for deleted text */
+  --color-prettylights-syntax-markup-deleted-bg: #4a1c1c; /* Dark red for deleted background */
+  --color-prettylights-syntax-markup-inserted-text: #d7e8d7; /* Light green for inserted text */
+  --color-prettylights-syntax-markup-inserted-bg: #1e4620; /* Dark green for inserted background */
+  --color-prettylights-syntax-markup-changed-text: #f4e3c9; /* Sandy beige for changed text */
+  --color-prettylights-syntax-markup-changed-bg: #5a3a1c; /* Dark sandy brown for changed background */
+  --color-prettylights-syntax-markup-ignored-text: #d8e2eb; /* Very light blue for ignored text */
+  --color-prettylights-syntax-markup-ignored-bg: #4a6986; /* Muted blue for ignored background */
+  --color-prettylights-syntax-meta-diff-range: #81a1c1; /* Light blue for diff range */
+  --color-prettylights-syntax-brackethighlighter-angle: #6b8294; /* Soft blue-gray for angle brackets */
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #5e81ac; /* Muted blue for gutter marks */
+  --color-prettylights-syntax-constant-other-reference-link: #8abeff; /* Light blue for links */
+
+  --color-btn-text: #2e3440; /* Dark gray for button text */
+  --color-btn-bg: #e5e9f0; /* Very light blue-gray for buttons */
+  --color-btn-border: #d8e2eb4d; /* Transparent light blue border */
+  --color-btn-shadow: 0 0 #0000; /* No shadow */
+  --color-btn-inset-shadow: 0 0 #0000; /* No inset shadow */
+  --color-btn-hover-bg: #d8e2eb; /* Light blue-gray on hover */
+  --color-btn-hover-border: #a3be8c; /* Muted green for hover border */
+  --color-btn-active-bg: #d1d9e1; /* Slightly darker blue-gray when active */
+  --color-btn-active-border: #81a1c1; /* Light blue for active border */
+  --color-btn-selected-bg: #c8d1d9; /* Muted blue-gray for selected */
+  --color-btn-primary-text: #fff; /* White for primary button text */
+  --color-btn-primary-bg: #5e81ac; /* Muted blue for primary buttons */
+  --color-btn-primary-border: #d8e2eb4d; /* Transparent light blue border */
+  --color-btn-primary-shadow: 0 0 #0000; /* No shadow */
+  --color-btn-primary-inset-shadow: 0 0 #0000; /* No inset shadow */
+  --color-btn-primary-hover-bg: #81a1c1; /* Lighter blue on hover */
+  --color-btn-primary-hover-border: #d8e2eb4d; /* Same border on hover */
+  --color-btn-primary-selected-bg: #5e81ac; /* Same blue when selected */
+  --color-btn-primary-selected-shadow: 0 0 #0000; /* No shadow */
+  --color-btn-primary-disabled-text: #d8e2eb80; /* Semi-transparent light blue for disabled text */
+  --color-btn-primary-disabled-bg: #5e81ac99; /* Semi-transparent blue for disabled background */
+  --color-btn-primary-disabled-border: #d8e2eb4d; /* Same border for disabled */
+
+  --color-action-list-item-default-hover-bg: #d8e2eb1f; /* Very light blue-gray for hover */
+  --color-segmented-control-bg: #81a1c11a; /* Transparent light blue for segmented control */
+  --color-segmented-control-button-bg: #e5e9f0; /* Light blue-gray for button */
+  --color-segmented-control-button-selected-border: #81a1c1; /* Light blue for selected border */
+
+  --color-fg-default: #2e3440; /* Dark gray for default text */
+  --color-fg-muted: #4c566a; /* Muted gray for muted text */
+  --color-fg-subtle: #6b8294; /* Soft blue-gray for subtle text */
+
+  --color-canvas-default: #f5f7fa; /* Very light blue-gray for default background */
+  --color-canvas-overlay: #eceff4; /* Off-white for overlay */
+  --color-canvas-inset: #e5e9f0; /* Light blue-gray for inset */
+  --color-canvas-subtle: #e9ecef; /* Subtle blue-gray for subtle background */
+
+  --color-border-default: #d8e2eb; /* Light blue for default border */
+  --color-border-muted: #c8d1d9; /* Muted blue-gray for muted border */
+  --color-neutral-muted: #81a1c166; /* Semi-transparent light blue for neutral muted */
+
+  --color-accent-fg: #5e81ac; /* Muted blue for accents */
+  --color-accent-emphasis: #4a6986; /* Darker blue for emphasis */
+  --color-accent-muted: #81a1c166; /* Semi-transparent light blue for muted accents */
+  --color-accent-subtle: #81a1c11a; /* Very transparent light blue for subtle accents */
+
+  --color-success-fg: #a3be8c; /* Muted green for success */
+  --color-attention-fg: #d08770; /* Soft coral for attention */
+  --color-attention-muted: #d0877066; /* Semi-transparent coral for muted attention */
+  --color-attention-subtle: #d0877026; /* Very transparent coral for subtle attention */
+
+  --color-danger-fg: #bf616a; /* Muted red for danger */
+  --color-danger-muted: #bf616a66; /* Semi-transparent red for muted danger */
+  --color-danger-subtle: #bf616a1a; /* Very transparent red for subtle danger */
+
+  --color-primer-shadow-inset: 0 0 #0000; /* No shadow */
+
+  --color-scale-gray-7: #c8d1d9; /* Muted blue-gray for gray scale */
+  --color-scale-blue-8: #4a6986; /* Darker blue for blue scale */
+
+  /*! Extensions from @primer/css/alerts/flash.scss */
+  --color-social-reaction-bg-hover: var(--color-scale-gray-7);
+  --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-8);
+}
+
+main .pagination-loader-container {
+  background-image: url(https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg);
+}
+
+/*! Custom CSS */
+.gsc-reactions-count {
+  display: none;
+}
+
+.gsc-timeline {
+  flex-direction: column-reverse;
+}
+
+.gsc-header {
+  padding-bottom: 1rem;
+}
+
+.gsc-comments > .gsc-header {
+  order: 1;
+}
+
+.gsc-comments > .gsc-comment-box {
+  margin-bottom: 1rem;
+  order: 2;
+}
+
+.gsc-comments > .gsc-timeline {
+  order: 3;
+}
+
+.gsc-homepage-bg {
+  background-color: #e5e9f0; /* Light blue-gray for homepage background */
+}
+
+main .gsc-loading-image {
+  background-image: url(https://github.githubassets.com/images/mona-loading-dimmed.gif);
+}
