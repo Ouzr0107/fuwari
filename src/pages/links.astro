@@ -1,0 +1,67 @@
+---
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+
+import { getEntry } from "astro:content";
+import { render } from "astro:content";
+import { linksConfig } from "@/config";
+import Markdown from "@components/misc/Markdown.astro";
+import I18nKey from "../i18n/i18nKey";
+import { i18n } from "../i18n/translation";
+import Comments from "@components/widget/Comments.astro";
+
+const linksPost = await getEntry("spec", "links");
+
+if (!linksPost) {
+    throw new Error("About page content not found");
+}
+
+const { Content } = await render(linksPost);
+---
+
+<MainGridLayout title={i18n(I18nKey.links)} description={i18n(I18nKey.links)}>
+    <div
+        class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32"
+    >
+        <div class="card-base z-10 px-9 py-6 relative w-full">
+            <!-- 友链卡片区域 -->
+            <div class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 dark:text-neutral-50">
+                    我的友链
+                </h2>
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                >
+                    {
+                        linksConfig.map((link) => (
+                            <a
+                                href={link.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="flex items-center p-4 rounded-[var(--radius-large)] transition-colors duration-200 hover:bg-[var(--btn-plain-bg-hover)] dark:hover:text-[var(--primary)]"
+                            >
+                                <img
+                                    src={link.avatar}
+                                    alt={`${link.name} 的图标`}
+                                    class="w-12 h-12 rounded-full mr-4"
+                                />
+                                <div>
+                                    <h3 class="text-lg font-medium text-[var(--btn-content)]">
+                                        {link.name}
+                                    </h3>
+                                    <p class="text-sm text-neutral-700 dark:text-neutral-300">
+                                        {link.desc}
+                                    </p>
+                                </div>
+                            </a>
+                        ))
+                    }
+                </div>
+            </div>
+
+            <Markdown class="mt-2">
+                <Content />
+            </Markdown>
+            <Comments />
+        </div>
+    </div>
+</MainGridLayout>

@@ -1,0 +1,57 @@
+---
+
+---
+
+<script>
+    function loadGiscus() {
+        const container = document.getElementById("giscus-comments");
+
+        if (!container) return;
+
+        // 创建 script 元素
+        const script = document.createElement("script");
+        script.src = "https://giscus.app/client.js";
+        script.dataset.repo = "Ouzr0107/fuwari";
+        script.dataset.repoId = "R_kgDOOJWcnQ";
+        script.dataset.category = "Announcements";
+        script.dataset.categoryId = "DIC_kwDOOJWcnc4Codjf";
+        script.dataset.mapping = "title";
+        script.dataset.strict = "0";
+        script.dataset.reactionsEnabled = "1";
+        script.dataset.emitMetadata = "0";
+        script.dataset.inputPosition = "top";
+        script.dataset.theme = document.documentElement.classList.contains(
+            "dark",
+        )
+            ? "catppuccin_mocha"
+            : "catppuccin_latte"; // 动态设置主题
+        script.dataset.lang = "zh-CN";
+        script.dataset.loading = "lazy";
+        script.crossOrigin = "anonymous";
+        script.async = true;
+
+        // 清空容器并插入新脚本
+        container.innerHTML = "";
+        container.appendChild(script);
+    }
+    loadGiscus();
+
+    // 页面加载时加载评论
+    document.addEventListener("astro:after-swap", loadGiscus);
+</script>
+<div id="giscus-comments"></div>
+
+<style>
+    /* 覆盖 Giscus 的样式 */
+    #giscus-comments .giscus-frame {
+        /* 示例：从 custom_example.css 中提取的样式 */
+        background-color: #f5f5f5;
+        color: #333;
+        /* 其他样式 */
+    }
+
+    /* 根据需要覆盖更多 Giscus 样式 */
+    #giscus-comments .giscus {
+        border-radius: var(--radius-large);
+    }
+</style>

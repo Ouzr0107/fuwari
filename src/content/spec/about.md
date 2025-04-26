@@ -1,9 +1,8 @@
-# About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+# 关于我
+这里是**王小明**，啥也不会，只会嗷嗷叫。
 
-::github{repo="saicaca/fuwari"}
+目前正在准备~~复试和~~毕设。
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+如果想联系请使用邮件或者底下评论区，谢谢~
+
+![喵喵](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHRxdGhsNWtqaHRpYWxicDdmZXAxNnc5dDVnZGU1MTdueXRxNWNuYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/npRnc6r5vhwV7kdmhd/giphy.gif)

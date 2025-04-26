@@ -38,6 +38,7 @@ export enum LinkPreset {
 	Home = 0,
 	Archive = 1,
 	About = 2,
+	Links = 3,
 }
 
 export type NavBarLink = {
@@ -65,6 +66,13 @@ export type LicenseConfig = {
 	enable: boolean;
 	name: string;
 	url: string;
+};
+
+export type LinksConfig = {
+	name: string;
+	desc: string;
+	url: string;
+	avatar: string;
 };
 
 export type LIGHT_DARK_MODE =
