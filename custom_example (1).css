@@ -4,96 +4,96 @@
  * https://github.com/primer/primitives/blob/main/LICENSE
  */
 main {
-  --color-prettylights-syntax-comment: #8b879c;
-  --color-prettylights-syntax-constant: #a69bff;
-  --color-prettylights-syntax-entity: #d4aaff;
-  --color-prettylights-syntax-storage-modifier-import: #e6e1f5;
-  --color-prettylights-syntax-entity-tag: #b3e1b3;
-  --color-prettylights-syntax-keyword: #ff8f88;
-  --color-prettylights-syntax-string: #b8d7ff;
-  --color-prettylights-syntax-variable: #ffb07a;
-  --color-prettylights-syntax-brackethighlighter-unmatched: #ff6f61;
-  --color-prettylights-syntax-invalid-illegal-text: #f0ebfa;
-  --color-prettylights-syntax-invalid-illegal-bg: #a22;
-  --color-prettylights-syntax-carriage-return-text: #f0ebfa;
-  --color-prettylights-syntax-carriage-return-bg: #b33;
-  --color-prettylights-syntax-string-regexp: #b3e1b3;
-  --color-prettylights-syntax-markup-list: #f5d78e;
-  --color-prettylights-syntax-markup-heading: #7a9cff;
-  --color-prettylights-syntax-markup-italic: #e6e1f5;
-  --color-prettylights-syntax-markup-bold: #e6e1f5;
-  --color-prettylights-syntax-markup-deleted-text: #ffe6e3;
-  --color-prettylights-syntax-markup-deleted-bg: #933;
-  --color-prettylights-syntax-markup-inserted-text: #d4f7d4;
-  --color-prettylights-syntax-markup-inserted-bg: #2a5;
-  --color-prettylights-syntax-markup-changed-text: #ffebcc;
-  --color-prettylights-syntax-markup-changed-bg: #853;
-  --color-prettylights-syntax-markup-ignored-text: #e6e1f5;
-  --color-prettylights-syntax-markup-ignored-bg: #5a8bff;
-  --color-prettylights-syntax-meta-diff-range: #d4aaff;
-  --color-prettylights-syntax-brackethighlighter-angle: #8b879c;
-  --color-prettylights-syntax-sublimelinter-gutter-mark: #7a7791;
-  --color-prettylights-syntax-constant-other-reference-link: #b8d7ff;
+  --color-prettylights-syntax-comment: #6b8294; /* Soft blue-gray for comments */
+  --color-prettylights-syntax-constant: #4a90e2; /* Bright blue for constants */
+  --color-prettylights-syntax-entity: #81a1c1; /* Light blue for entities */
+  --color-prettylights-syntax-storage-modifier-import: #d8e2eb; /* Very light blue for modifiers */
+  --color-prettylights-syntax-entity-tag: #88c0d0; /* Cyan for tags */
+  --color-prettylights-syntax-keyword: #d08770; /* Soft coral for keywords */
+  --color-prettylights-syntax-string: #8abeff; /* Light blue for strings */
+  --color-prettylights-syntax-variable: #e5c07b; /* Sandy yellow for variables */
+  --color-prettylights-syntax-brackethighlighter-unmatched: #bf616a; /* Muted red for unmatched brackets */
+  --color-prettylights-syntax-invalid-illegal-text: #eceff4; /* Off-white for illegal text */
+  --color-prettylights-syntax-invalid-illegal-bg: #992222; /* Dark red for illegal background */
+  --color-prettylights-syntax-carriage-return-text: #eceff4; /* Off-white for carriage return text */
+  --color-prettylights-syntax-carriage-return-bg: #a33; /* Muted red for carriage return background */
+  --color-prettylights-syntax-string-regexp: #88c0d0; /* Cyan for regex */
+  --color-prettylights-syntax-markup-list: #ebcb8b; /* Sandy yellow for lists */
+  --color-prettylights-syntax-markup-heading: #5e81ac; /* Muted blue for headings */
+  --color-prettylights-syntax-markup-italic: #d8e2eb; /* Very light blue for italic */
+  --color-prettylights-syntax-markup-bold: #d8e2eb; /* Very light blue for bold */
+  --color-prettylights-syntax-markup-deleted-text: #f4d7d7; /* Light red for deleted text */
+  --color-prettylights-syntax-markup-deleted-bg: #4a1c1c; /* Dark red for deleted background */
+  --color-prettylights-syntax-markup-inserted-text: #d7e8d7; /* Light green for inserted text */
+  --color-prettylights-syntax-markup-inserted-bg: #1e4620; /* Dark green for inserted background */
+  --color-prettylights-syntax-markup-changed-text: #f4e3c9; /* Sandy beige for changed text */
+  --color-prettylights-syntax-markup-changed-bg: #5a3a1c; /* Dark sandy brown for changed background */
+  --color-prettylights-syntax-markup-ignored-text: #d8e2eb; /* Very light blue for ignored text */
+  --color-prettylights-syntax-markup-ignored-bg: #4a6986; /* Muted blue for ignored background */
+  --color-prettylights-syntax-meta-diff-range: #81a1c1; /* Light blue for diff range */
+  --color-prettylights-syntax-brackethighlighter-angle: #6b8294; /* Soft blue-gray for angle brackets */
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #5e81ac; /* Muted blue for gutter marks */
+  --color-prettylights-syntax-constant-other-reference-link: #8abeff; /* Light blue for links */
 
-  --color-btn-text: #4a446f;
-  --color-btn-bg: #e4dfff;
-  --color-btn-border: #d4ccff4d;
-  --color-btn-shadow: 0 0 #0000;
-  --color-btn-inset-shadow: 0 0 #0000;
-  --color-btn-hover-bg: #d9d1ff;
-  --color-btn-hover-border: #c4bfff;
-  --color-btn-active-bg: #d4ccff;
-  --color-btn-active-border: #b4afff;
-  --color-btn-selected-bg: #cdc5ff;
-  --color-btn-primary-text: #fff;
-  --color-btn-primary-bg: #b89bff;
-  --color-btn-primary-border: #d4ccff4d;
-  --color-btn-primary-shadow: 0 0 #0000;
-  --color-btn-primary-inset-shadow: 0 0 #0000;
-  --color-btn-primary-hover-bg: #c4aaff;
-  --color-btn-primary-hover-border: #d4ccff4d;
-  --color-btn-primary-selected-bg: #b89bff;
-  --color-btn-primary-selected-shadow: 0 0 #0000;
-  --color-btn-primary-disabled-text: #d4ccff80;
-  --color-btn-primary-disabled-bg: #b89bff99;
-  --color-btn-primary-disabled-border: #d4ccff4d;
+  --color-btn-text: #2e3440; /* Dark gray for button text */
+  --color-btn-bg: #e5e9f0; /* Very light blue-gray for buttons */
+  --color-btn-border: #d8e2eb4d; /* Transparent light blue border */
+  --color-btn-shadow: 0 0 #0000; /* No shadow */
+  --color-btn-inset-shadow: 0 0 #0000; /* No inset shadow */
+  --color-btn-hover-bg: #d8e2eb; /* Light blue-gray on hover */
+  --color-btn-hover-border: #a3be8c; /* Muted green for hover border */
+  --color-btn-active-bg: #d1d9e1; /* Slightly darker blue-gray when active */
+  --color-btn-active-border: #81a1c1; /* Light blue for active border */
+  --color-btn-selected-bg: #c8d1d9; /* Muted blue-gray for selected */
+  --color-btn-primary-text: #fff; /* White for primary button text */
+  --color-btn-primary-bg: #5e81ac; /* Muted blue for primary buttons */
+  --color-btn-primary-border: #d8e2eb4d; /* Transparent light blue border */
+  --color-btn-primary-shadow: 0 0 #0000; /* No shadow */
+  --color-btn-primary-inset-shadow: 0 0 #0000; /* No inset shadow */
+  --color-btn-primary-hover-bg: #81a1c1; /* Lighter blue on hover */
+  --color-btn-primary-hover-border: #d8e2eb4d; /* Same border on hover */
+  --color-btn-primary-selected-bg: #5e81ac; /* Same blue when selected */
+  --color-btn-primary-selected-shadow: 0 0 #0000; /* No shadow */
+  --color-btn-primary-disabled-text: #d8e2eb80; /* Semi-transparent light blue for disabled text */
+  --color-btn-primary-disabled-bg: #5e81ac99; /* Semi-transparent blue for disabled background */
+  --color-btn-primary-disabled-border: #d8e2eb4d; /* Same border for disabled */
 
-  --color-action-list-item-default-hover-bg: #d4ccff1f;
-  --color-segmented-control-bg: #b4afff1a;
-  --color-segmented-control-button-bg: #cdc5ff;
-  --color-segmented-control-button-selected-border: #b4afff;
+  --color-action-list-item-default-hover-bg: #d8e2eb1f; /* Very light blue-gray for hover */
+  --color-segmented-control-bg: #81a1c11a; /* Transparent light blue for segmented control */
+  --color-segmented-control-button-bg: #e5e9f0; /* Light blue-gray for button */
+  --color-segmented-control-button-selected-border: #81a1c1; /* Light blue for selected border */
 
-  --color-fg-default: #4a446f;
-  --color-fg-muted: #7a7791;
-  --color-fg-subtle: #8b879c;
+  --color-fg-default: #2e3440; /* Dark gray for default text */
+  --color-fg-muted: #4c566a; /* Muted gray for muted text */
+  --color-fg-subtle: #6b8294; /* Soft blue-gray for subtle text */
 
-  --color-canvas-default: #f4f1ff;
-  --color-canvas-overlay: #ede9ff;
-  --color-canvas-inset: #e4dfff;
-  --color-canvas-subtle: #e9e5ff;
+  --color-canvas-default: #f5f7fa; /* Very light blue-gray for default background */
+  --color-canvas-overlay: #eceff4; /* Off-white for overlay */
+  --color-canvas-inset: #e5e9f0; /* Light blue-gray for inset */
+  --color-canvas-subtle: #e9ecef; /* Subtle blue-gray for subtle background */
 
-  --color-border-default: #d4ccff;
-  --color-border-muted: #cdc5ff;
-  --color-neutral-muted: #b4afff66;
+  --color-border-default: #d8e2eb; /* Light blue for default border */
+  --color-border-muted: #c8d1d9; /* Muted blue-gray for muted border */
+  --color-neutral-muted: #81a1c166; /* Semi-transparent light blue for neutral muted */
 
-  --color-accent-fg: #8b7bff;
-  --color-accent-emphasis: #7a6aff;
-  --color-accent-muted: #9b8bff66;
-  --color-accent-subtle: #a89bff1a;
+  --color-accent-fg: #5e81ac; /* Muted blue for accents */
+  --color-accent-emphasis: #4a6986; /* Darker blue for emphasis */
+  --color-accent-muted: #81a1c166; /* Semi-transparent light blue for muted accents */
+  --color-accent-subtle: #81a1c11a; /* Very transparent light blue for subtle accents */
 
-  --color-success-fg: #88cc88;
-  --color-attention-fg: #d4a34d;
-  --color-attention-muted: #d4a34d66;
-  --color-attention-subtle: #d4a34d26;
+  --color-success-fg: #a3be8c; /* Muted green for success */
+  --color-attention-fg: #d08770; /* Soft coral for attention */
+  --color-attention-muted: #d0877066; /* Semi-transparent coral for muted attention */
+  --color-attention-subtle: #d0877026; /* Very transparent coral for subtle attention */
 
-  --color-danger-fg: #ff6f61;
-  --color-danger-muted: #ff6f6166;
-  --color-danger-subtle: #ff6f611a;
+  --color-danger-fg: #bf616a; /* Muted red for danger */
+  --color-danger-muted: #bf616a66; /* Semi-transparent red for muted danger */
+  --color-danger-subtle: #bf616a1a; /* Very transparent red for subtle danger */
 
-  --color-primer-shadow-inset: 0 0 #0000;
+  --color-primer-shadow-inset: 0 0 #0000; /* No shadow */
 
-  --color-scale-gray-7: #cdc5ff;
-  --color-scale-blue-8: #5a4dff;
+  --color-scale-gray-7: #c8d1d9; /* Muted blue-gray for gray scale */
+  --color-scale-blue-8: #4a6986; /* Darker blue for blue scale */
 
   /*! Extensions from @primer/css/alerts/flash.scss */
   --color-social-reaction-bg-hover: var(--color-scale-gray-7);
@@ -131,7 +131,7 @@ main .pagination-loader-container {
 }
 
 .gsc-homepage-bg {
-  background-color: #e4dfff;
+  background-color: #e5e9f0; /* Light blue-gray for homepage background */
 }
 
 main .gsc-loading-image {
