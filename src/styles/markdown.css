@@ -3,7 +3,12 @@
         @apply text-3xl;
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         .anchor {
             @apply transition -m-0.5 ml-[0.2ch] p-0.5 select-none opacity-0 no-underline !important;
 
@@ -20,12 +25,12 @@
     }
 
     a:not(.no-styling) {
-        @apply relative bg-none link font-medium text-[var(--primary)]
-        underline decoration-[var(--link-underline)] decoration-1 decoration-dashed underline-offset-4;
+        @apply relative bg-none link font-medium text-[var(--primary)] underline decoration-[var(--link-underline)] decoration-1 decoration-dashed underline-offset-4;
         box-decoration-break: clone;
         -webkit-box-decoration-break: clone;
-    
-        &:hover, &:active {
+
+        &:hover,
+        &:active {
             @apply decoration-transparent;
             background: var(--btn-plain-bg-hover);
             border-bottom: 1px dashed var(--link-hover);
@@ -36,15 +41,18 @@
     code {
         @apply bg-[var(--inline-code-bg)] text-[var(--inline-code-color)] px-1 py-0.5 rounded-md overflow-hidden;
 
-        font-family: 'Maple Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+        font-family: 'Fira Code Variable', 'Microsoft Yahei', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+
         &:before {
-            content:none;
+            content: none;
         }
+
         &:after {
-            content:none;
+            content: none;
         }
 
         counter-reset: line;
+
         span.line {
             &:before {
                 @apply text-white/25 mr-4 w-4 inline-block;
@@ -52,7 +60,9 @@
                 counter-increment: line;
                 direction: rtl;
             }
-            &:last-child:empty, &:last-child:has(> span:empty:only-child) {
+
+            &:last-child:empty,
+            &:last-child:has(> span:empty:only-child) {
                 display: none;
             }
         }
@@ -71,7 +81,8 @@
         }
     }
 
-    ul, ol {
+    ul,
+    ol {
         li::marker {
             @apply text-[var(--primary)];
         }
@@ -86,7 +97,8 @@
         }
 
         /* Remove the double quotes from default styles */
-        p:before, p:after {
+        p:before,
+        p:after {
             @apply content-none;
         }
 
