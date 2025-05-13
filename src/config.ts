@@ -120,4 +120,11 @@ export const linksConfig: LinksConfig[] = [
 		avatar:
 			"https://cworld0.com/_image?href=%2F_astro%2Favatar.CKYBHtS3.png&w=768&h=768&f=webp",
 	},
+	{
+		name: "Yu",
+		desc: "Something about me.",
+		url: "https://www.mileomni.com/",
+		avatar:
+			"https://img.mileomni.com/m4vWN8HU6K5vWtaW.jpg",
+	},
 ];
