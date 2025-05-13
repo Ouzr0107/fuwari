@@ -63,7 +63,7 @@
             simulateKeyPress(inputField, 'Enter');
             appendLog(`输入数字：${counter}`);
 
-            setTimeout(() => {}, 1000);
+            setTimeout(() => { }, 1000);
             const chatWidget = iframe.contentDocument.querySelector('.nitro-chat-widget');
             const chatBubbles = chatWidget.querySelectorAll('.bubble-container');
             console.log(chatBubbles.length)
@@ -276,13 +276,6 @@
             createFloatingWindow();
             return;
         }
-
-        const script = iframe.contentDocument.createElement('script');
-        script.textContent = `
-  window.setInterval = function() { return null; };
-  Date.now = () => 0;
-`;
-        iframe.contentDocument.head.appendChild(script);
 
         createFloatingWindow();
         minimizeWindow(); // 初始最小化悬浮窗
