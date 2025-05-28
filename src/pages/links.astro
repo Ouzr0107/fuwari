@@ -12,7 +12,7 @@ import Comments from "@components/widget/Comments.astro";
 const linksPost = await getEntry("spec", "links");
 
 if (!linksPost) {
-    throw new Error("About page content not found");
+    throw new Error("Links page content not found");
 }
 
 const { Content } = await render(linksPost);
@@ -25,9 +25,9 @@ const { Content } = await render(linksPost);
         <div class="card-base z-10 px-9 py-6 relative w-full">
             <!-- 友链卡片区域 -->
             <div class="mb-8">
-                <h2 class="text-2xl font-semibold mb-4 dark:text-neutral-50">
+                <h1 class="text-3xl font-extrabold mb-4 dark:text-neutral-50">
                     我的友链
-                </h2>
+                </h1>
                 <div
                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
                 >
