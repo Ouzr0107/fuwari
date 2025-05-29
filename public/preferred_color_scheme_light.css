@@ -34,7 +34,7 @@ main {
   --color-prettylights-syntax-brackethighlighter-angle: #57606a;
   --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
   --color-prettylights-syntax-constant-other-reference-link: #0a3069;
-  --color-btn-text: #A18CD1;
+  --color-btn-text: #000000;
   --color-btn-bg: #FFFFFF;
   --color-btn-border: none;
   --color-btn-shadow: 0 0 transparent;
@@ -44,7 +44,7 @@ main {
   --color-btn-active-bg: #ECE7F2;
   --color-btn-active-border: none;
   --color-btn-selected-bg: #ECE7F2;
-  --color-btn-primary-text: #A18CD1;
+  --color-btn-primary-text: #000000;
   --color-btn-primary-bg: #FFFFFF;
   --color-btn-primary-border: none;
   --color-btn-primary-shadow: 0 0 transparent;
@@ -53,23 +53,23 @@ main {
   --color-btn-primary-hover-border: none;
   --color-btn-primary-selected-bg: #ECE7F2;
   --color-btn-primary-selected-shadow: 0 0 transparent;
-  --color-btn-primary-disabled-text: rgba(161, 140, 209, 0.5);
+  --color-btn-primary-disabled-text: rgba(0, 0, 0, 0.5);
   --color-btn-primary-disabled-bg: #EDE8F4;
   --color-btn-primary-disabled-border: none;
   --color-action-list-item-default-hover-bg: rgba(161, 140, 209, 0.1);
   --color-segmented-control-bg: #ECE7F2;
   --color-segmented-control-button-bg: #FFFFFF;
   --color-segmented-control-button-selected-border: none;
-  --color-fg-default: #A18CD1;
-  --color-fg-muted: #B8A9D6;
-  --color-fg-subtle: #C9C0E0;
+  --color-fg-default: #000000;
+  --color-fg-muted: #666666;
+  --color-fg-subtle: #999999;
   --color-canvas-default: #FFFFFF;
   --color-canvas-overlay: #FFFFFF;
   --color-canvas-inset: #F5F2FA;
   --color-canvas-subtle: #F5F2FA;
   --color-border-default: none;
   --color-border-muted: none;
-  --color-neutral-muted: rgba(161, 140, 209, 0.2);
+  --color-neutral-muted: rgba(0, 0, 0, 0.2);
   --color-accent-fg: #A18CD1;
   --color-accent-emphasis: #A18CD1;
   --color-accent-muted: rgba(161, 140, 209, 0.4);
@@ -92,14 +92,14 @@ main {
   --btn-regular-bg: #FFFFFF; /* Aligned with card background */
   --btn-regular-bg-hover: #F5F2FA; /* Aligned with a lighter shade */
   --btn-regular-bg-active: #ECE7F2; /* Aligned with background */
-  --btn-content: #A18CD1; /* Aligned with text color */
+  --btn-content: #000000; /* Aligned with text color */
   --link-underline: #A18CD1; /* Aligned with text color */
   --link-hover: #B8A9D6; /* Slightly lighter purple for hover */
   --link-active: #9A82C6; /* Slightly darker purple for active */
   --selection-bg: #F5F2FA; /* Aligned with subtle background */
   --line-color: #A18CD1; /* Aligned with text/lines */
-  --meta-divider: #B8A9D6; /* Aligned with muted text */
-  --deep-text: #A18CD1; /* Aligned with primary text */
+  --meta-divider: #666666; /* Aligned with muted text */
+  --deep-text: #000000; /* Aligned with primary text */
 
   /*! Extensions from @primer/css/alerts/flash.scss */
   --color-social-reaction-bg-hover: var(--color-scale-gray-1);

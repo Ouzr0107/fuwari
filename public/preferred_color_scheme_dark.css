@@ -7,7 +7,7 @@ main {
   --color-prettylights-syntax-comment: #8b949e;
   --color-prettylights-syntax-constant: #79c0ff;
   --color-prettylights-syntax-entity: #d2a8ff;
-  --color-prettylights-syntax-storage-modifier-import: #C9B8E6;
+  --color-prettylights-syntax-storage-modifier-import: #FFFFFF;
   --color-prettylights-syntax-entity-tag: #7ee787;
   --color-prettylights-syntax-keyword: #ff7b72;
   --color-prettylights-syntax-string: #a5d6ff;
@@ -20,60 +20,60 @@ main {
   --color-prettylights-syntax-string-regexp: #7ee787;
   --color-prettylights-syntax-markup-list: #f2cc60;
   --color-prettylights-syntax-markup-heading: #1f6feb;
-  --color-prettylights-syntax-markup-italic: #C9B8E6;
-  --color-prettylights-syntax-markup-bold: #C9B8E6;
+  --color-prettylights-syntax-markup-italic: #FFFFFF;
+  --color-prettylights-syntax-markup-bold: #FFFFFF;
   --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
   --color-prettylights-syntax-markup-deleted-bg: #67060c;
   --color-prettylights-syntax-markup-inserted-text: #aff5b4;
   --color-prettylights-syntax-markup-inserted-bg: #033a16;
   --color-prettylights-syntax-markup-changed-text: #ffdfb6;
   --color-prettylights-syntax-markup-changed-bg: #5a1e02;
-  --color-prettylights-syntax-markup-ignored-text: #C9B8E6;
+  --color-prettylights-syntax-markup-ignored-text: #FFFFFF;
   --color-prettylights-syntax-markup-ignored-bg: #1158c7;
   --color-prettylights-syntax-meta-diff-range: #d2a8ff;
   --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
   --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
   --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
-  --color-btn-text: #C9B8E6;
-  --color-btn-bg: #3F2F5B;
+  --color-btn-text: #FFFFFF;
+  --color-btn-bg: #2A1E42;
   --color-btn-border: none;
   --color-btn-shadow: 0 0 transparent;
   --color-btn-inset-shadow: 0 0 transparent;
-  --color-btn-hover-bg: #4A3A66;
+  --color-btn-hover-bg: #342A4D;
   --color-btn-hover-border: none;
-  --color-btn-active-bg: #2B1A47;
+  --color-btn-active-bg: #1A0F2B;
   --color-btn-active-border: none;
-  --color-btn-selected-bg: #2B1A47;
-  --color-btn-primary-text: #C9B8E6;
-  --color-btn-primary-bg: #3F2F5B;
+  --color-btn-selected-bg: #1A0F2B;
+  --color-btn-primary-text: #FFFFFF;
+  --color-btn-primary-bg: #2A1E42;
   --color-btn-primary-border: none;
   --color-btn-primary-shadow: 0 0 transparent;
   --color-btn-primary-inset-shadow: 0 0 transparent;
-  --color-btn-primary-hover-bg: #4A3A66;
+  --color-btn-primary-hover-bg: #342A4D;
   --color-btn-primary-hover-border: none;
-  --color-btn-primary-selected-bg: #2B1A47;
+  --color-btn-primary-selected-bg: #1A0F2B;
   --color-btn-primary-selected-shadow: 0 0 transparent;
-  --color-btn-primary-disabled-text: rgba(201, 184, 230, 0.5);
-  --color-btn-primary-disabled-bg: #3F2F5B;
+  --color-btn-primary-disabled-text: rgba(255, 255, 255, 0.5);
+  --color-btn-primary-disabled-bg: #2A1E42;
   --color-btn-primary-disabled-border: none;
-  --color-action-list-item-default-hover-bg: rgba(201, 184, 230, 0.12);
-  --color-segmented-control-bg: #2B1A47;
-  --color-segmented-control-button-bg: #3F2F5B;
+  --color-action-list-item-default-hover-bg: rgba(122, 94, 183, 0.12);
+  --color-segmented-control-bg: #1A0F2B;
+  --color-segmented-control-button-bg: #2A1E42;
   --color-segmented-control-button-selected-border: none;
-  --color-fg-default: #C9B8E6;
-  --color-fg-muted: #AFA2D3;
-  --color-fg-subtle: #9689BF;
-  --color-canvas-default: #2B1A47;
-  --color-canvas-overlay: #3F2F5B;
-  --color-canvas-inset: #1F1435;
-  --color-canvas-subtle: #3F2F5B;
+  --color-fg-default: #FFFFFF;
+  --color-fg-muted: #D3D3D3;
+  --color-fg-subtle: #B0B0B0;
+  --color-canvas-default: #1A0F2B;
+  --color-canvas-overlay: #2A1E42;
+  --color-canvas-inset: #120B1F;
+  --color-canvas-subtle: #2A1E42;
   --color-border-default: none;
   --color-border-muted: none;
-  --color-neutral-muted: rgba(201, 184, 230, 0.4);
-  --color-accent-fg: #C9B8E6;
-  --color-accent-emphasis: #C9B8E6;
-  --color-accent-muted: rgba(201, 184, 230, 0.4);
-  --color-accent-subtle: rgba(201, 184, 230, 0.1);
+  --color-neutral-muted: rgba(122, 94, 183, 0.4);
+  --color-accent-fg: #7A5EB7;
+  --color-accent-emphasis: #7A5EB7;
+  --color-accent-muted: rgba(122, 94, 183, 0.4);
+  --color-accent-subtle: rgba(122, 94, 183, 0.1);
   --color-success-fg: #3fb950;
   --color-attention-fg: #d29922;
   --color-attention-muted: rgb(187 128 9 / 40%);
@@ -82,39 +82,39 @@ main {
   --color-danger-muted: rgb(248 81 73 / 40%);
   --color-danger-subtle: rgb(248 81 73 / 10%);
   --color-primer-shadow-inset: 0 0 transparent;
-  --color-scale-gray-7: #3F2F5B;
+  --color-scale-gray-7: #2A1E42;
   --color-scale-blue-8: #0c2d6b;
-  --primary: #C9B8E6;
-  /* Aligned with --color-accent-fg */
-  --btn-plain-bg-hover: #4A3A66;
-  /* Aligned with hover state */
-  --btn-plain-bg-active: #2B1A47;
+  --primary: #7A5EB7;
+  /* Adjusted to a darker purple */
+  --btn-plain-bg-hover: #342A4D;
+  /* Deepened hover state */
+  --btn-plain-bg-active: #1A0F2B;
   /* Aligned with background */
-  --card-bg: #3F2F5B;
+  --card-bg: #2A1E42;
+  /* Deepened card background */
+  --float-panel-bg: #2A1E42;
   /* Aligned with card background */
-  --float-panel-bg: #3F2F5B;
+  --btn-regular-bg: #2A1E42;
   /* Aligned with card background */
-  --btn-regular-bg: #3F2F5B;
-  /* Aligned with card background */
-  --btn-regular-bg-hover: #4A3A66;
-  /* Aligned with hover state */
-  --btn-regular-bg-active: #2B1A47;
+  --btn-regular-bg-hover: #342A4D;
+  /* Deepened hover state */
+  --btn-regular-bg-active: #1A0F2B;
   /* Aligned with background */
-  --btn-content: #C9B8E6;
+  --btn-content: #FFFFFF;
   /* Aligned with text color */
-  --link-underline: #C9B8E6;
-  /* Aligned with text color */
-  --link-hover: #D3C7E9;
+  --link-underline: #7A5EB7;
+  /* Adjusted to a darker purple */
+  --link-hover: #8F76C1;
   /* Slightly lighter for hover */
-  --link-active: #BFAEDB;
+  --link-active: #6648A3;
   /* Slightly darker for active */
-  --selection-bg: rgba(201, 184, 230, 0.1);
-  /* Aligned with subtle background */
-  --line-color: #C9B8E6;
-  /* Aligned with text/lines */
-  --meta-divider: #AFA2D3;
+  --selection-bg: rgba(122, 94, 183, 0.1);
+  /* Adjusted subtle background */
+  --line-color: #7A5EB7;
+  /* Adjusted to a darker purple */
+  --meta-divider: #D3D3D3;
   /* Aligned with muted text */
-  --deep-text: #C9B8E6;
+  --deep-text: #FFFFFF;
   /* Aligned with primary text */
 
   /*! Extensions from @primer/css/alerts/flash.scss */
