@@ -84,22 +84,38 @@ main {
   --color-primer-shadow-inset: inset 0 1px 0 rgb(208 215 222 / 20%);
   --color-scale-gray-1: #eaeef2;
   --color-scale-blue-1: #b6e3ff;
-  --primary: #0969da; /* Aligned with --color-accent-fg */
-  --btn-plain-bg-hover: #f3f4f6; /* Aligned with --color-btn-hover-bg */
-  --btn-plain-bg-active: hsl(220deg 14% 93% / 100%); /* Aligned with --color-btn-active-bg */
-  --card-bg: #fff; /* Aligned with --color-canvas-default */
-  --float-panel-bg: #fff; /* Aligned with --color-canvas-overlay */
-  --btn-regular-bg: #f6f8fa; /* Aligned with --color-btn-bg */
-  --btn-regular-bg-hover: #f3f4f6; /* Aligned with --color-btn-hover-bg */
-  --btn-regular-bg-active: hsl(220deg 14% 93% / 100%); /* Aligned with --color-btn-active-bg */
-  --btn-content: #24292f; /* Aligned with --color-btn-text */
-  --link-underline: #0969da; /* Aligned with --color-accent-fg */
-  --link-hover: #1f6feb; /* Slightly darker blue for hover */
-  --link-active: #0550ae; /* Aligned with --color-prettylights-syntax-constant */
-  --selection-bg: #ddf4ff; /* Aligned with --color-accent-subtle */
-  --line-color: #d0d7de; /* Aligned with --color-border-default */
-  --meta-divider: #656d76; /* Aligned with --color-fg-muted */
-  --deep-text: #1F2328; /* Aligned with --color-fg-default */
+  --primary: #0969da;
+  /* Aligned with --color-accent-fg */
+  --btn-plain-bg-hover: #f3f4f6;
+  /* Aligned with --color-btn-hover-bg */
+  --btn-plain-bg-active: hsl(220deg 14% 93% / 100%);
+  /* Aligned with --color-btn-active-bg */
+  --card-bg: #fff;
+  /* Aligned with --color-canvas-default */
+  --float-panel-bg: #fff;
+  /* Aligned with --color-canvas-overlay */
+  --btn-regular-bg: #f6f8fa;
+  /* Aligned with --color-btn-bg */
+  --btn-regular-bg-hover: #f3f4f6;
+  /* Aligned with --color-btn-hover-bg */
+  --btn-regular-bg-active: hsl(220deg 14% 93% / 100%);
+  /* Aligned with --color-btn-active-bg */
+  --btn-content: #24292f;
+  /* Aligned with --color-btn-text */
+  --link-underline: #0969da;
+  /* Aligned with --color-accent-fg */
+  --link-hover: #1f6feb;
+  /* Slightly darker blue for hover */
+  --link-active: #0550ae;
+  /* Aligned with --color-prettylights-syntax-constant */
+  --selection-bg: #ddf4ff;
+  /* Aligned with --color-accent-subtle */
+  --line-color: #d0d7de;
+  /* Aligned with --color-border-default */
+  --meta-divider: #656d76;
+  /* Aligned with --color-fg-muted */
+  --deep-text: #1F2328;
+  /* Aligned with --color-fg-default */
 
   /*! Extensions from @primer/css/alerts/flash.scss */
   --color-social-reaction-bg-hover: var(--color-scale-gray-1);
@@ -108,12 +124,14 @@ main {
 
 main .pagination-loader-container {
   background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line.svg");
-  transition: all 0.3s; /* Added transition for consistency with main.css */
+  transition: all 0.3s;
+  /* Added transition for consistency with main.css */
 }
 
 main .gsc-loading-image {
   background-image: url("https://github.githubassets.com/images/mona-loading-default.gif");
-  transition: all 0.3s; /* Added transition for consistency with main.css */
+  transition: all 0.3s;
+  /* Added transition for consistency with main.css */
 }
 
 /* Component styles inspired by main.css */
@@ -126,17 +144,21 @@ main .btn-plain {
   justify-content: center;
   position: relative;
 }
+
 main .btn-plain:hover {
   background: var(--btn-plain-bg-hover);
   color: var(--primary);
 }
+
 main .btn-plain:active {
   background: var(--btn-plain-bg-active);
 }
+
 main .btn-plain.scale-animation {
   position: relative;
   z-index: 0;
 }
+
 main .btn-plain.scale-animation::before {
   content: "";
   position: absolute;
@@ -146,18 +168,22 @@ main .btn-plain.scale-animation::before {
   transition: all 0.3s ease-out;
   z-index: -10;
 }
+
 main .btn-plain.scale-animation:hover::before {
   transform: scale(1);
   background: var(--btn-plain-bg-hover);
 }
+
 main .btn-plain.scale-animation:active::before {
   background: var(--btn-plain-bg-active);
 }
+
 main .btn-plain.scale-animation.current-theme-btn::before {
   transform: scale(1);
   opacity: 1;
   background: var(--btn-plain-bg-hover);
 }
+
 main .btn-plain.scale-animation.current-theme-btn {
   color: var(--primary);
 }
@@ -170,9 +196,11 @@ main .btn-regular {
   align-items: center;
   justify-content: center;
 }
+
 main .btn-regular:hover {
   background: var(--btn-regular-bg-hover);
 }
+
 main .btn-regular:active {
   background: var(--btn-regular-bg-active);
 }
@@ -185,9 +213,11 @@ main .link-underline {
   text-underline-offset: 0.25rem;
   transition: all 0.3s;
 }
+
 main .link-underline:hover {
   text-decoration-color: var(--link-hover);
 }
+
 main .link-underline:active {
   text-decoration-color: var(--link-active);
 }
@@ -195,6 +225,7 @@ main .link-underline:active {
 main .dash-line {
   position: relative;
 }
+
 main .dash-line::before {
   content: "";
   position: absolute;
@@ -212,217 +243,242 @@ main ::selection {
 }
 
 /*! Dark mode */
-@media (prefers-color-scheme: dark) {
-  /*! MIT License
-   * Copyright (c) 2018 GitHub Inc.
-   * https://github.com/primer/primitives/blob/main/LICENSE
-   */
 
-  main {
-    --color-prettylights-syntax-comment: #8b949e;
-    --color-prettylights-syntax-constant: #79c0ff;
-    --color-prettylights-syntax-entity: #d2a8ff;
-    --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
-    --color-prettylights-syntax-entity-tag: #7ee787;
-    --color-prettylights-syntax-keyword: #ff7b72;
-    --color-prettylights-syntax-string: #a5d6ff;
-    --color-prettylights-syntax-variable: #ffa657;
-    --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
-    --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
-    --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
-    --color-prettylights-syntax-carriage-return-text: #f0f6fc;
-    --color-prettylights-syntax-carriage-return-bg: #b62324;
-    --color-prettylights-syntax-string-regexp: #7ee787;
-    --color-prettylights-syntax-markup-list: #f2cc60;
-    --color-prettylights-syntax-markup-heading: #1f6feb;
-    --color-prettylights-syntax-markup-italic: #c9d1d9;
-    --color-prettylights-syntax-markup-bold: #c9d1d9;
-    --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
-    --color-prettylights-syntax-markup-deleted-bg: #67060c;
-    --color-prettylights-syntax-markup-inserted-text: #aff5b4;
-    --color-prettylights-syntax-markup-inserted-bg: #033a16;
-    --color-prettylights-syntax-markup-changed-text: #ffdfb6;
-    --color-prettylights-syntax-markup-changed-bg: #5a1e02;
-    --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
-    --color-prettylights-syntax-markup-ignored-bg: #1158c7;
-    --color-prettylights-syntax-meta-diff-range: #d2a8ff;
-    --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
-    --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
-    --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
-    --color-btn-text: #c9d1d9;
-    --color-btn-bg: #21262d;
-    --color-btn-border: rgb(240 246 252 / 10%);
-    --color-btn-shadow: 0 0 transparent;
-    --color-btn-inset-shadow: 0 0 transparent;
-    --color-btn-hover-bg: #30363d;
-    --color-btn-hover-border: #8b949e;
-    --color-btn-active-bg: hsl(212deg 12% 18% / 100%);
-    --color-btn-active-border: #6e7681;
-    --color-btn-selected-bg: #161b22;
-    --color-btn-primary-text: #fff;
-    --color-btn-primary-bg: #238636;
-    --color-btn-primary-border: rgb(240 246 252 / 10%);
-    --color-btn-primary-shadow: 0 0 transparent;
-    --color-btn-primary-inset-shadow: 0 0 transparent;
-    --color-btn-primary-hover-bg: #2ea043;
-    --color-btn-primary-hover-border: rgb(240 246 252 / 10%);
-    --color-btn-primary-selected-bg: #238636;
-    --color-btn-primary-selected-shadow: 0 0 transparent;
-    --color-btn-primary-disabled-text: rgb(255 255 255 / 50%);
-    --color-btn-primary-disabled-bg: rgb(35 134 54 / 60%);
-    --color-btn-primary-disabled-border: rgb(240 246 252 / 10%);
-    --color-action-list-item-default-hover-bg: rgb(177 186 196 / 12%);
-    --color-segmented-control-bg: rgb(110 118 129 / 10%);
-    --color-segmented-control-button-bg: #0d1117;
-    --color-segmented-control-button-selected-border: #6e7681;
-    --color-fg-default: #e6edf3;
-    --color-fg-muted: #7d8590;
-    --color-fg-subtle: #6e7681;
-    --color-canvas-default: #0d1117;
-    --color-canvas-overlay: #161b22;
-    --color-canvas-inset: #010409;
-    --color-canvas-subtle: #161b22;
-    --color-border-default: #30363d;
-    --color-border-muted: #21262d;
-    --color-neutral-muted: rgb(110 118 129 / 40%);
-    --color-accent-fg: #2f81f7;
-    --color-accent-emphasis: #1f6feb;
-    --color-accent-muted: rgb(56 139 253 / 40%);
-    --color-accent-subtle: rgb(56 139 253 / 10%);
-    --color-success-fg: #3fb950;
-    --color-attention-fg: #d29922;
-    --color-attention-muted: rgb(187 128 9 / 40%);
-    --color-attention-subtle: rgb(187 128 9 / 15%);
-    --color-danger-fg: #f85149;
-    --color-danger-muted: rgb(248 81 73 / 40%);
-    --color-danger-subtle: rgb(248 81 73 / 10%);
-    --color-primer-shadow-inset: 0 0 transparent;
-    --color-scale-gray-7: #21262d;
-    --color-scale-blue-8: #0c2d6b;
-    --primary: #2f81f7; /* Aligned with --color-accent-fg */
-    --btn-plain-bg-hover: #30363d; /* Aligned with --color-btn-hover-bg */
-    --btn-plain-bg-active: hsl(212deg 12% 18% / 100%); /* Aligned with --color-btn-active-bg */
-    --card-bg: #0d1117; /* Aligned with --color-canvas-default */
-    --float-panel-bg: #161b22; /* Aligned with --color-canvas-overlay */
-    --btn-regular-bg: #21262d; /* Aligned with --color-btn-bg */
-    --btn-regular-bg-hover: #30363d; /* Aligned with --color-btn-hover-bg */
-    --btn-regular-bg-active: hsl(212deg 12% 18% / 100%); /* Aligned with --color-btn-active-bg */
-    --btn-content: #c9d1d9; /* Aligned with --color-btn-text */
-    --link-underline: #2f81f7; /* Aligned with --color-accent-fg */
-    --link-hover: #1f6feb; /* Aligned with --color-accent-emphasis */
-    --link-active: #79c0ff; /* Aligned with --color-prettylights-syntax-constant */
-    --selection-bg: rgb(56 139 253 / 10%); /* Aligned with --color-accent-subtle */
-    --line-color: #30363d; /* Aligned with --color-border-default */
-    --meta-divider: #7d8590; /* Aligned with --color-fg-muted */
-    --deep-text: #e6edf3; /* Aligned with --color-fg-default */
+main .dark {
+  --color-prettylights-syntax-comment: #8b949e;
+  --color-prettylights-syntax-constant: #79c0ff;
+  --color-prettylights-syntax-entity: #d2a8ff;
+  --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+  --color-prettylights-syntax-entity-tag: #7ee787;
+  --color-prettylights-syntax-keyword: #ff7b72;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --color-prettylights-syntax-variable: #ffa657;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+  --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+  --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+  --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+  --color-prettylights-syntax-carriage-return-bg: #b62324;
+  --color-prettylights-syntax-string-regexp: #7ee787;
+  --color-prettylights-syntax-markup-list: #f2cc60;
+  --color-prettylights-syntax-markup-heading: #1f6feb;
+  --color-prettylights-syntax-markup-italic: #c9d1d9;
+  --color-prettylights-syntax-markup-bold: #c9d1d9;
+  --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+  --color-prettylights-syntax-markup-deleted-bg: #67060c;
+  --color-prettylights-syntax-markup-inserted-text: #aff5b4;
+  --color-prettylights-syntax-markup-inserted-bg: #033a16;
+  --color-prettylights-syntax-markup-changed-text: #ffdfb6;
+  --color-prettylights-syntax-markup-changed-bg: #5a1e02;
+  --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+  --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+  --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+  --color-btn-text: #c9d1d9;
+  --color-btn-bg: #21262d;
+  --color-btn-border: rgb(240 246 252 / 10%);
+  --color-btn-shadow: 0 0 transparent;
+  --color-btn-inset-shadow: 0 0 transparent;
+  --color-btn-hover-bg: #30363d;
+  --color-btn-hover-border: #8b949e;
+  --color-btn-active-bg: hsl(212deg 12% 18% / 100%);
+  --color-btn-active-border: #6e7681;
+  --color-btn-selected-bg: #161b22;
+  --color-btn-primary-text: #fff;
+  --color-btn-primary-bg: #238636;
+  --color-btn-primary-border: rgb(240 246 252 / 10%);
+  --color-btn-primary-shadow: 0 0 transparent;
+  --color-btn-primary-inset-shadow: 0 0 transparent;
+  --color-btn-primary-hover-bg: #2ea043;
+  --color-btn-primary-hover-border: rgb(240 246 252 / 10%);
+  --color-btn-primary-selected-bg: #238636;
+  --color-btn-primary-selected-shadow: 0 0 transparent;
+  --color-btn-primary-disabled-text: rgb(255 255 255 / 50%);
+  --color-btn-primary-disabled-bg: rgb(35 134 54 / 60%);
+  --color-btn-primary-disabled-border: rgb(240 246 252 / 10%);
+  --color-action-list-item-default-hover-bg: rgb(177 186 196 / 12%);
+  --color-segmented-control-bg: rgb(110 118 129 / 10%);
+  --color-segmented-control-button-bg: #0d1117;
+  --color-segmented-control-button-selected-border: #6e7681;
+  --color-fg-default: #e6edf3;
+  --color-fg-muted: #7d8590;
+  --color-fg-subtle: #6e7681;
+  --color-canvas-default: #0d1117;
+  --color-canvas-overlay: #161b22;
+  --color-canvas-inset: #010409;
+  --color-canvas-subtle: #161b22;
+  --color-border-default: #30363d;
+  --color-border-muted: #21262d;
+  --color-neutral-muted: rgb(110 118 129 / 40%);
+  --color-accent-fg: #2f81f7;
+  --color-accent-emphasis: #1f6feb;
+  --color-accent-muted: rgb(56 139 253 / 40%);
+  --color-accent-subtle: rgb(56 139 253 / 10%);
+  --color-success-fg: #3fb950;
+  --color-attention-fg: #d29922;
+  --color-attention-muted: rgb(187 128 9 / 40%);
+  --color-attention-subtle: rgb(187 128 9 / 15%);
+  --color-danger-fg: #f85149;
+  --color-danger-muted: rgb(248 81 73 / 40%);
+  --color-danger-subtle: rgb(248 81 73 / 10%);
+  --color-primer-shadow-inset: 0 0 transparent;
+  --color-scale-gray-7: #21262d;
+  --color-scale-blue-8: #0c2d6b;
+  --primary: #2f81f7;
+  /* Aligned with --color-accent-fg */
+  --btn-plain-bg-hover: #30363d;
+  /* Aligned with --color-btn-hover-bg */
+  --btn-plain-bg-active: hsl(212deg 12% 18% / 100%);
+  /* Aligned with --color-btn-active-bg */
+  --card-bg: #0d1117;
+  /* Aligned with --color-canvas-default */
+  --float-panel-bg: #161b22;
+  /* Aligned with --color-canvas-overlay */
+  --btn-regular-bg: #21262d;
+  /* Aligned with --color-btn-bg */
+  --btn-regular-bg-hover: #30363d;
+  /* Aligned with --color-btn-hover-bg */
+  --btn-regular-bg-active: hsl(212deg 12% 18% / 100%);
+  /* Aligned with --color-btn-active-bg */
+  --btn-content: #c9d1d9;
+  /* Aligned with --color-btn-text */
+  --link-underline: #2f81f7;
+  /* Aligned with --color-accent-fg */
+  --link-hover: #1f6feb;
+  /* Aligned with --color-accent-emphasis */
+  --link-active: #79c0ff;
+  /* Aligned with --color-prettylights-syntax-constant */
+  --selection-bg: rgb(56 139 253 / 10%);
+  /* Aligned with --color-accent-subtle */
+  --line-color: #30363d;
+  /* Aligned with --color-border-default */
+  --meta-divider: #7d8590;
+  /* Aligned with --color-fg-muted */
+  --deep-text: #e6edf3;
+  /* Aligned with --color-fg-default */
 
-    /*! Extensions from @primer/css/alerts/flash.scss */
-    --color-social-reaction-bg-hover: var(--color-scale-gray-7);
-    --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-8);
-  }
+  /*! Extensions from @primer/css/alerts/flash.scss */
+  --color-social-reaction-bg-hover: var(--color-scale-gray-7);
+  --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-8);
+}
 
-  main .pagination-loader-container {
-    background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg");
-    transition: all 0.3s; /* Added transition for consistency with main.css */
-  }
+main .dark .pagination-loader-container {
+  background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg");
+  transition: all 0.3s;
+  /* Added transition for consistency with main.css */
+}
 
-  main .gsc-loading-image {
-    background-image: url("https://github.githubassets.com/images/mona-loading-dark.gif");
-    transition: all 0.3s; /* Added transition for consistency with main.css */
-  }
+main .dark .gsc-loading-image {
+  background-image: url("https://github.githubassets.com/images/mona-loading-dark.gif");
+  transition: all 0.3s;
+  /* Added transition for consistency with main.css */
+}
 
-  /* Component styles inspired by main.css */
-  main .btn-plain {
-    background: none;
-    color: rgba(255, 255, 255, 0.75);
-    transition: all 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-  main .btn-plain:hover {
-    background: var(--btn-plain-bg-hover);
-    color: var(--primary);
-  }
-  main .btn-plain:active {
-    background: var(--btn-plain-bg-active);
-  }
-  main .btn-plain.scale-animation {
-    position: relative;
-    z-index: 0;
-  }
-  main .btn-plain.scale-animation::before {
-    content: "";
-    position: absolute;
-    border-radius: inherit;
-    inset: 0;
-    transform: scale(0.85);
-    transition: all 0.3s ease-out;
-    z-index: -10;
-  }
-  main .btn-plain.scale-animation:hover::before {
-    transform: scale(1);
-    background: var(--btn-plain-bg-hover);
-  }
-  main .btn-plain.scale-animation:active::before {
-    background: var(--btn-plain-bg-active);
-  }
-  main .btn-plain.scale-animation.current-theme-btn::before {
-    transform: scale(1);
-    opacity: 1;
-    background: var(--btn-plain-bg-hover);
-  }
-  main .btn-plain.scale-animation.current-theme-btn {
-    color: var(--primary);
-  }
+/* Component styles inspired by main.css */
+main .dark .btn-plain {
+  background: none;
+  color: rgba(255, 255, 255, 0.75);
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 
-  main .btn-regular {
-    background: var(--btn-regular-bg);
-    color: rgba(255, 255, 255, 0.75);
-    transition: all 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  main .btn-regular:hover {
-    background: var(--btn-regular-bg-hover);
-  }
-  main .btn-regular:active {
-    background: var(--btn-regular-bg-active);
-  }
+main .dark .btn-plain:hover {
+  background: var(--btn-plain-bg-hover);
+  color: var(--primary);
+}
 
-  main .link-underline {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-decoration-style: dashed;
-    text-decoration-color: var(--link-underline);
-    text-underline-offset: 0.25rem;
-    transition: all 0.3s;
-  }
-  main .link-underline:hover {
-    text-decoration-color: var(--link-hover);
-  }
-  main .link-underline:active {
-    text-decoration-color: var(--link-active);
-  }
+main .dark .btn-plain:active {
+  background: var(--btn-plain-bg-active);
+}
 
-  main .dash-line {
-    position: relative;
-  }
-  main .dash-line::before {
-    content: "";
-    position: absolute;
-    width: 10%;
-    height: 100%;
-    left: calc(50% - 1px);
-    border-left: 2px dashed var(--line-color);
-    pointer-events: none;
-    transition: all 0.3s;
-    transform: translateY(-50%);
-  }
+main .dark .btn-plain.scale-animation {
+  position: relative;
+  z-index: 0;
+}
 
-  main ::selection {
-    background-color: var(--selection-bg);
-  }
+main .dark .btn-plain.scale-animation::before {
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+  inset: 0;
+  transform: scale(0.85);
+  transition: all 0.3s ease-out;
+  z-index: -10;
+}
+
+main .dark .btn-plain.scale-animation:hover::before {
+  transform: scale(1);
+  background: var(--btn-plain-bg-hover);
+}
+
+main .dark .btn-plain.scale-animation:active::before {
+  background: var(--btn-plain-bg-active);
+}
+
+main .dark .btn-plain.scale-animation.current-theme-btn::before {
+  transform: scale(1);
+  opacity: 1;
+  background: var(--btn-plain-bg-hover);
+}
+
+main .dark .btn-plain.scale-animation.current-theme-btn {
+  color: var(--primary);
+}
+
+main .dark .btn-regular {
+  background: var(--btn-regular-bg);
+  color: rgba(255, 255, 255, 0.75);
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .dark .btn-regular:hover {
+  background: var(--btn-regular-bg-hover);
+}
+
+main .dark .btn-regular:active {
+  background: var(--btn-regular-bg-active);
+}
+
+main .dark .link-underline {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-style: dashed;
+  text-decoration-color: var(--link-underline);
+  text-underline-offset: 0.25rem;
+  transition: all 0.3s;
+}
+
+main .dark .link-underline:hover {
+  text-decoration-color: var(--link-hover);
+}
+
+main .dark .link-underline:active {
+  text-decoration-color: var(--link-active);
+}
+
+main .dark .dash-line {
+  position: relative;
+}
+
+main .dark .dash-line::before {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  left: calc(50% - 1px);
+  border-left: 2px dashed var(--line-color);
+  pointer-events: none;
+  transition: all 0.3s;
+  transform: translateY(-50%);
+}
+
+main .dark ::selection {
+  background-color: var(--selection-bg);
 }
