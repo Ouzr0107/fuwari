@@ -63,10 +63,10 @@ main {
   --color-fg-default: #FFFFFF;
   --color-fg-muted: #D3D3D3;
   --color-fg-subtle: #B0B0B0;
-  --color-canvas-default: #1A0F2B;
+  --color-canvas-default: #1f1b22;
   --color-canvas-overlay: #2A1E42;
-  --color-canvas-inset: #120B1F;
-  --color-canvas-subtle: #2A1E42;
+  --color-canvas-inset: #0f0c12;
+  --color-canvas-subtle: #493d53;
   --color-border-default: none;
   --color-border-muted: none;
   --color-neutral-muted: rgba(122, 94, 183, 0.4);
@@ -120,6 +120,13 @@ main {
   /*! Extensions from @primer/css/alerts/flash.scss */
   --color-social-reaction-bg-hover: var(--color-scale-gray-7);
   --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-8);
+}
+
+*,
+:after,
+:before {
+  border: none;
+  box-sizing: border-box
 }
 
 main .pagination-loader-container {
