@@ -34,46 +34,46 @@ main {
   --color-prettylights-syntax-brackethighlighter-angle: #57606a;
   --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
   --color-prettylights-syntax-constant-other-reference-link: #0a3069;
-  --color-btn-text: #24292f;
-  --color-btn-bg: #f6f8fa;
-  --color-btn-border: rgb(31 35 40 / 15%);
-  --color-btn-shadow: 0 1px 0 rgb(31 35 40 / 4%);
-  --color-btn-inset-shadow: inset 0 1px 0 rgb(255 255 255 / 25%);
-  --color-btn-hover-bg: #f3f4f6;
-  --color-btn-hover-border: rgb(31 35 40 / 15%);
-  --color-btn-active-bg: hsl(220deg 14% 93% / 100%);
-  --color-btn-active-border: rgb(31 35 40 / 15%);
-  --color-btn-selected-bg: hsl(220deg 14% 94% / 100%);
-  --color-btn-primary-text: #fff;
-  --color-btn-primary-bg: #1f883d;
-  --color-btn-primary-border: rgb(31 35 40 / 15%);
-  --color-btn-primary-shadow: 0 1px 0 rgb(31 35 40 / 10%);
-  --color-btn-primary-inset-shadow: inset 0 1px 0 rgb(255 255 255 / 3%);
-  --color-btn-primary-hover-bg: #1a7f37;
-  --color-btn-primary-hover-border: rgb(31 35 40 / 15%);
-  --color-btn-primary-selected-bg: hsl(137deg 66% 28% / 100%);
-  --color-btn-primary-selected-shadow: inset 0 1px 0 rgb(0 45 17 / 20%);
-  --color-btn-primary-disabled-text: rgb(255 255 255 / 80%);
-  --color-btn-primary-disabled-bg: #94d3a2;
-  --color-btn-primary-disabled-border: rgb(31 35 40 / 15%);
-  --color-action-list-item-default-hover-bg: rgb(208 215 222 / 32%);
-  --color-segmented-control-bg: #eaeef2;
-  --color-segmented-control-button-bg: #fff;
-  --color-segmented-control-button-selected-border: #8c959f;
-  --color-fg-default: #1F2328;
-  --color-fg-muted: #656d76;
-  --color-fg-subtle: #6e7781;
-  --color-canvas-default: #fff;
-  --color-canvas-overlay: #fff;
-  --color-canvas-inset: #f6f8fa;
-  --color-canvas-subtle: #f6f8fa;
-  --color-border-default: #d0d7de;
-  --color-border-muted: hsl(210deg 18% 87% / 100%);
-  --color-neutral-muted: rgb(175 184 193 / 20%);
-  --color-accent-fg: #0969da;
-  --color-accent-emphasis: #0969da;
-  --color-accent-muted: rgb(84 174 255 / 40%);
-  --color-accent-subtle: #ddf4ff;
+  --color-btn-text: #A18CD1;
+  --color-btn-bg: #FFFFFF;
+  --color-btn-border: none;
+  --color-btn-shadow: 0 0 transparent;
+  --color-btn-inset-shadow: 0 0 transparent;
+  --color-btn-hover-bg: #F5F2FA;
+  --color-btn-hover-border: none;
+  --color-btn-active-bg: #ECE7F2;
+  --color-btn-active-border: none;
+  --color-btn-selected-bg: #ECE7F2;
+  --color-btn-primary-text: #A18CD1;
+  --color-btn-primary-bg: #FFFFFF;
+  --color-btn-primary-border: none;
+  --color-btn-primary-shadow: 0 0 transparent;
+  --color-btn-primary-inset-shadow: 0 0 transparent;
+  --color-btn-primary-hover-bg: #F5F2FA;
+  --color-btn-primary-hover-border: none;
+  --color-btn-primary-selected-bg: #ECE7F2;
+  --color-btn-primary-selected-shadow: 0 0 transparent;
+  --color-btn-primary-disabled-text: rgba(161, 140, 209, 0.5);
+  --color-btn-primary-disabled-bg: #EDE8F4;
+  --color-btn-primary-disabled-border: none;
+  --color-action-list-item-default-hover-bg: rgba(161, 140, 209, 0.1);
+  --color-segmented-control-bg: #ECE7F2;
+  --color-segmented-control-button-bg: #FFFFFF;
+  --color-segmented-control-button-selected-border: none;
+  --color-fg-default: #A18CD1;
+  --color-fg-muted: #B8A9D6;
+  --color-fg-subtle: #C9C0E0;
+  --color-canvas-default: #FFFFFF;
+  --color-canvas-overlay: #FFFFFF;
+  --color-canvas-inset: #F5F2FA;
+  --color-canvas-subtle: #F5F2FA;
+  --color-border-default: none;
+  --color-border-muted: none;
+  --color-neutral-muted: rgba(161, 140, 209, 0.2);
+  --color-accent-fg: #A18CD1;
+  --color-accent-emphasis: #A18CD1;
+  --color-accent-muted: rgba(161, 140, 209, 0.4);
+  --color-accent-subtle: #F5F2FA;
   --color-success-fg: #1a7f37;
   --color-attention-fg: #9a6700;
   --color-attention-muted: rgb(212 167 44 / 40%);
@@ -81,29 +81,33 @@ main {
   --color-danger-fg: #d1242f;
   --color-danger-muted: rgb(255 129 130 / 40%);
   --color-danger-subtle: #ffebe9;
-  --color-primer-shadow-inset: inset 0 1px 0 rgb(208 215 222 / 20%);
-  --color-scale-gray-1: #eaeef2;
+  --color-primer-shadow-inset: 0 0 transparent;
+  --color-scale-gray-1: #F5F2FA;
   --color-scale-blue-1: #b6e3ff;
-  --primary: #0969da; /* Aligned with --color-accent-fg */
-  --btn-plain-bg-hover: #f3f4f6; /* Aligned with --color-btn-hover-bg */
-  --btn-plain-bg-active: hsl(220deg 14% 93% / 100%); /* Aligned with --color-btn-active-bg */
-  --card-bg: #fff; /* Aligned with --color-canvas-default */
-  --float-panel-bg: #fff; /* Aligned with --color-canvas-overlay */
-  --btn-regular-bg: #f6f8fa; /* Aligned with --color-btn-bg */
-  --btn-regular-bg-hover: #f3f4f6; /* Aligned with --color-btn-hover-bg */
-  --btn-regular-bg-active: hsl(220deg 14% 93% / 100%); /* Aligned with --color-btn-active-bg */
-  --btn-content: #24292f; /* Aligned with --color-btn-text */
-  --link-underline: #0969da; /* Aligned with --color-accent-fg */
-  --link-hover: #1f6feb; /* Slightly darker blue for hover */
-  --link-active: #0550ae; /* Aligned with --color-prettylights-syntax-constant */
-  --selection-bg: #ddf4ff; /* Aligned with --color-accent-subtle */
-  --line-color: #d0d7de; /* Aligned with --color-border-default */
-  --meta-divider: #656d76; /* Aligned with --color-fg-muted */
-  --deep-text: #1F2328; /* Aligned with --color-fg-default */
+  --primary: #A18CD1; /* Aligned with --color-accent-fg */
+  --btn-plain-bg-hover: #F5F2FA; /* Aligned with a lighter shade */
+  --btn-plain-bg-active: #ECE7F2; /* Aligned with background */
+  --card-bg: #FFFFFF; /* Aligned with card background */
+  --float-panel-bg: #FFFFFF; /* Aligned with card background */
+  --btn-regular-bg: #FFFFFF; /* Aligned with card background */
+  --btn-regular-bg-hover: #F5F2FA; /* Aligned with a lighter shade */
+  --btn-regular-bg-active: #ECE7F2; /* Aligned with background */
+  --btn-content: #A18CD1; /* Aligned with text color */
+  --link-underline: #A18CD1; /* Aligned with text color */
+  --link-hover: #B8A9D6; /* Slightly lighter purple for hover */
+  --link-active: #9A82C6; /* Slightly darker purple for active */
+  --selection-bg: #F5F2FA; /* Aligned with subtle background */
+  --line-color: #A18CD1; /* Aligned with text/lines */
+  --meta-divider: #B8A9D6; /* Aligned with muted text */
+  --deep-text: #A18CD1; /* Aligned with primary text */
 
   /*! Extensions from @primer/css/alerts/flash.scss */
   --color-social-reaction-bg-hover: var(--color-scale-gray-1);
   --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-1);
+}
+
+main {
+  background-color: #ECE7F2;
 }
 
 main .pagination-loader-container {
@@ -119,12 +123,13 @@ main .gsc-loading-image {
 /* Component styles inspired by main.css */
 main .btn-plain {
   background: none;
-  color: rgba(0, 0, 0, 0.75);
+  color: var(--btn-content);
   transition: all 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  border: none;
 }
 main .btn-plain:hover {
   background: var(--btn-plain-bg-hover);
@@ -136,6 +141,7 @@ main .btn-plain:active {
 main .btn-plain.scale-animation {
   position: relative;
   z-index: 0;
+  border: none;
 }
 main .btn-plain.scale-animation::before {
   content: "";
@@ -145,6 +151,7 @@ main .btn-plain.scale-animation::before {
   transform: scale(0.85);
   transition: all 0.3s ease-out;
   z-index: -10;
+  border: none;
 }
 main .btn-plain.scale-animation:hover::before {
   transform: scale(1);
@@ -160,6 +167,7 @@ main .btn-plain.scale-animation.current-theme-btn::before {
 }
 main .btn-plain.scale-animation.current-theme-btn {
   color: var(--primary);
+  border: none;
 }
 
 main .btn-regular {
@@ -169,6 +177,7 @@ main .btn-regular {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
 }
 main .btn-regular:hover {
   background: var(--btn-regular-bg-hover);
@@ -184,6 +193,7 @@ main .link-underline {
   text-decoration-color: var(--link-underline);
   text-underline-offset: 0.25rem;
   transition: all 0.3s;
+  border: none;
 }
 main .link-underline:hover {
   text-decoration-color: var(--link-hover);
@@ -194,6 +204,7 @@ main .link-underline:active {
 
 main .dash-line {
   position: relative;
+  border: none;
 }
 main .dash-line::before {
   content: "";
@@ -205,6 +216,7 @@ main .dash-line::before {
   pointer-events: none;
   transition: all 0.3s;
   transform: translateY(-50%);
+  border: none;
 }
 
 main ::selection {
