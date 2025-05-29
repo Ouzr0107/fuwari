@@ -106,10 +106,6 @@ main {
   --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-1);
 }
 
-main {
-  background-color: #ECE7F2;
-}
-
 main .pagination-loader-container {
   background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line.svg");
   transition: all 0.3s;

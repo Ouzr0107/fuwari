@@ -3,249 +3,247 @@
  * https://github.com/primer/primitives/blob/main/LICENSE
  */
 
-@media (prefers-color-scheme: dark) {
-  main {
-    --color-prettylights-syntax-comment: #8b949e;
-    --color-prettylights-syntax-constant: #79c0ff;
-    --color-prettylights-syntax-entity: #d2a8ff;
-    --color-prettylights-syntax-storage-modifier-import: #C9B8E6;
-    --color-prettylights-syntax-entity-tag: #7ee787;
-    --color-prettylights-syntax-keyword: #ff7b72;
-    --color-prettylights-syntax-string: #a5d6ff;
-    --color-prettylights-syntax-variable: #ffa657;
-    --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
-    --color-prettylights-syntax-invalid-illegal-text: #E6E0F3;
-    --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
-    --color-prettylights-syntax-carriage-return-text: #E6E0F3;
-    --color-prettylights-syntax-carriage-return-bg: #b62324;
-    --color-prettylights-syntax-string-regexp: #7ee787;
-    --color-prettylights-syntax-markup-list: #f2cc60;
-    --color-prettylights-syntax-markup-heading: #1f6feb;
-    --color-prettylights-syntax-markup-italic: #C9B8E6;
-    --color-prettylights-syntax-markup-bold: #C9B8E6;
-    --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
-    --color-prettylights-syntax-markup-deleted-bg: #67060c;
-    --color-prettylights-syntax-markup-inserted-text: #aff5b4;
-    --color-prettylights-syntax-markup-inserted-bg: #033a16;
-    --color-prettylights-syntax-markup-changed-text: #ffdfb6;
-    --color-prettylights-syntax-markup-changed-bg: #5a1e02;
-    --color-prettylights-syntax-markup-ignored-text: #C9B8E6;
-    --color-prettylights-syntax-markup-ignored-bg: #1158c7;
-    --color-prettylights-syntax-meta-diff-range: #d2a8ff;
-    --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
-    --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
-    --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
-    --color-btn-text: #C9B8E6;
-    --color-btn-bg: #3F2F5B;
-    --color-btn-border: none;
-    --color-btn-shadow: 0 0 transparent;
-    --color-btn-inset-shadow: 0 0 transparent;
-    --color-btn-hover-bg: #4A3A66;
-    --color-btn-hover-border: none;
-    --color-btn-active-bg: #2B1A47;
-    --color-btn-active-border: none;
-    --color-btn-selected-bg: #2B1A47;
-    --color-btn-primary-text: #C9B8E6;
-    --color-btn-primary-bg: #3F2F5B;
-    --color-btn-primary-border: none;
-    --color-btn-primary-shadow: 0 0 transparent;
-    --color-btn-primary-inset-shadow: 0 0 transparent;
-    --color-btn-primary-hover-bg: #4A3A66;
-    --color-btn-primary-hover-border: none;
-    --color-btn-primary-selected-bg: #2B1A47;
-    --color-btn-primary-selected-shadow: 0 0 transparent;
-    --color-btn-primary-disabled-text: rgba(201, 184, 230, 0.5);
-    --color-btn-primary-disabled-bg: #3F2F5B;
-    --color-btn-primary-disabled-border: none;
-    --color-action-list-item-default-hover-bg: rgba(201, 184, 230, 0.12);
-    --color-segmented-control-bg: #2B1A47;
-    --color-segmented-control-button-bg: #3F2F5B;
-    --color-segmented-control-button-selected-border: none;
-    --color-fg-default: #C9B8E6;
-    --color-fg-muted: #AFA2D3;
-    --color-fg-subtle: #9689BF;
-    --color-canvas-default: #2B1A47;
-    --color-canvas-overlay: #3F2F5B;
-    --color-canvas-inset: #1F1435;
-    --color-canvas-subtle: #3F2F5B;
-    --color-border-default: none;
-    --color-border-muted: none;
-    --color-neutral-muted: rgba(201, 184, 230, 0.4);
-    --color-accent-fg: #C9B8E6;
-    --color-accent-emphasis: #C9B8E6;
-    --color-accent-muted: rgba(201, 184, 230, 0.4);
-    --color-accent-subtle: rgba(201, 184, 230, 0.1);
-    --color-success-fg: #3fb950;
-    --color-attention-fg: #d29922;
-    --color-attention-muted: rgb(187 128 9 / 40%);
-    --color-attention-subtle: rgb(187 128 9 / 15%);
-    --color-danger-fg: #f85149;
-    --color-danger-muted: rgb(248 81 73 / 40%);
-    --color-danger-subtle: rgb(248 81 73 / 10%);
-    --color-primer-shadow-inset: 0 0 transparent;
-    --color-scale-gray-7: #3F2F5B;
-    --color-scale-blue-8: #0c2d6b;
-    --primary: #C9B8E6;
-    /* Aligned with --color-accent-fg */
-    --btn-plain-bg-hover: #4A3A66;
-    /* Aligned with hover state */
-    --btn-plain-bg-active: #2B1A47;
-    /* Aligned with background */
-    --card-bg: #3F2F5B;
-    /* Aligned with card background */
-    --float-panel-bg: #3F2F5B;
-    /* Aligned with card background */
-    --btn-regular-bg: #3F2F5B;
-    /* Aligned with card background */
-    --btn-regular-bg-hover: #4A3A66;
-    /* Aligned with hover state */
-    --btn-regular-bg-active: #2B1A47;
-    /* Aligned with background */
-    --btn-content: #C9B8E6;
-    /* Aligned with text color */
-    --link-underline: #C9B8E6;
-    /* Aligned with text color */
-    --link-hover: #D3C7E9;
-    /* Slightly lighter for hover */
-    --link-active: #BFAEDB;
-    /* Slightly darker for active */
-    --selection-bg: rgba(201, 184, 230, 0.1);
-    /* Aligned with subtle background */
-    --line-color: #C9B8E6;
-    /* Aligned with text/lines */
-    --meta-divider: #AFA2D3;
-    /* Aligned with muted text */
-    --deep-text: #C9B8E6;
-    /* Aligned with primary text */
+main {
+  --color-prettylights-syntax-comment: #8b949e;
+  --color-prettylights-syntax-constant: #79c0ff;
+  --color-prettylights-syntax-entity: #d2a8ff;
+  --color-prettylights-syntax-storage-modifier-import: #C9B8E6;
+  --color-prettylights-syntax-entity-tag: #7ee787;
+  --color-prettylights-syntax-keyword: #ff7b72;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --color-prettylights-syntax-variable: #ffa657;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+  --color-prettylights-syntax-invalid-illegal-text: #E6E0F3;
+  --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+  --color-prettylights-syntax-carriage-return-text: #E6E0F3;
+  --color-prettylights-syntax-carriage-return-bg: #b62324;
+  --color-prettylights-syntax-string-regexp: #7ee787;
+  --color-prettylights-syntax-markup-list: #f2cc60;
+  --color-prettylights-syntax-markup-heading: #1f6feb;
+  --color-prettylights-syntax-markup-italic: #C9B8E6;
+  --color-prettylights-syntax-markup-bold: #C9B8E6;
+  --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+  --color-prettylights-syntax-markup-deleted-bg: #67060c;
+  --color-prettylights-syntax-markup-inserted-text: #aff5b4;
+  --color-prettylights-syntax-markup-inserted-bg: #033a16;
+  --color-prettylights-syntax-markup-changed-text: #ffdfb6;
+  --color-prettylights-syntax-markup-changed-bg: #5a1e02;
+  --color-prettylights-syntax-markup-ignored-text: #C9B8E6;
+  --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+  --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+  --color-btn-text: #C9B8E6;
+  --color-btn-bg: #3F2F5B;
+  --color-btn-border: none;
+  --color-btn-shadow: 0 0 transparent;
+  --color-btn-inset-shadow: 0 0 transparent;
+  --color-btn-hover-bg: #4A3A66;
+  --color-btn-hover-border: none;
+  --color-btn-active-bg: #2B1A47;
+  --color-btn-active-border: none;
+  --color-btn-selected-bg: #2B1A47;
+  --color-btn-primary-text: #C9B8E6;
+  --color-btn-primary-bg: #3F2F5B;
+  --color-btn-primary-border: none;
+  --color-btn-primary-shadow: 0 0 transparent;
+  --color-btn-primary-inset-shadow: 0 0 transparent;
+  --color-btn-primary-hover-bg: #4A3A66;
+  --color-btn-primary-hover-border: none;
+  --color-btn-primary-selected-bg: #2B1A47;
+  --color-btn-primary-selected-shadow: 0 0 transparent;
+  --color-btn-primary-disabled-text: rgba(201, 184, 230, 0.5);
+  --color-btn-primary-disabled-bg: #3F2F5B;
+  --color-btn-primary-disabled-border: none;
+  --color-action-list-item-default-hover-bg: rgba(201, 184, 230, 0.12);
+  --color-segmented-control-bg: #2B1A47;
+  --color-segmented-control-button-bg: #3F2F5B;
+  --color-segmented-control-button-selected-border: none;
+  --color-fg-default: #C9B8E6;
+  --color-fg-muted: #AFA2D3;
+  --color-fg-subtle: #9689BF;
+  --color-canvas-default: #2B1A47;
+  --color-canvas-overlay: #3F2F5B;
+  --color-canvas-inset: #1F1435;
+  --color-canvas-subtle: #3F2F5B;
+  --color-border-default: none;
+  --color-border-muted: none;
+  --color-neutral-muted: rgba(201, 184, 230, 0.4);
+  --color-accent-fg: #C9B8E6;
+  --color-accent-emphasis: #C9B8E6;
+  --color-accent-muted: rgba(201, 184, 230, 0.4);
+  --color-accent-subtle: rgba(201, 184, 230, 0.1);
+  --color-success-fg: #3fb950;
+  --color-attention-fg: #d29922;
+  --color-attention-muted: rgb(187 128 9 / 40%);
+  --color-attention-subtle: rgb(187 128 9 / 15%);
+  --color-danger-fg: #f85149;
+  --color-danger-muted: rgb(248 81 73 / 40%);
+  --color-danger-subtle: rgb(248 81 73 / 10%);
+  --color-primer-shadow-inset: 0 0 transparent;
+  --color-scale-gray-7: #3F2F5B;
+  --color-scale-blue-8: #0c2d6b;
+  --primary: #C9B8E6;
+  /* Aligned with --color-accent-fg */
+  --btn-plain-bg-hover: #4A3A66;
+  /* Aligned with hover state */
+  --btn-plain-bg-active: #2B1A47;
+  /* Aligned with background */
+  --card-bg: #3F2F5B;
+  /* Aligned with card background */
+  --float-panel-bg: #3F2F5B;
+  /* Aligned with card background */
+  --btn-regular-bg: #3F2F5B;
+  /* Aligned with card background */
+  --btn-regular-bg-hover: #4A3A66;
+  /* Aligned with hover state */
+  --btn-regular-bg-active: #2B1A47;
+  /* Aligned with background */
+  --btn-content: #C9B8E6;
+  /* Aligned with text color */
+  --link-underline: #C9B8E6;
+  /* Aligned with text color */
+  --link-hover: #D3C7E9;
+  /* Slightly lighter for hover */
+  --link-active: #BFAEDB;
+  /* Slightly darker for active */
+  --selection-bg: rgba(201, 184, 230, 0.1);
+  /* Aligned with subtle background */
+  --line-color: #C9B8E6;
+  /* Aligned with text/lines */
+  --meta-divider: #AFA2D3;
+  /* Aligned with muted text */
+  --deep-text: #C9B8E6;
+  /* Aligned with primary text */
 
-    /*! Extensions from @primer/css/alerts/flash.scss */
-    --color-social-reaction-bg-hover: var(--color-scale-gray-7);
-    --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-8);
-  }
+  /*! Extensions from @primer/css/alerts/flash.scss */
+  --color-social-reaction-bg-hover: var(--color-scale-gray-7);
+  --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-8);
+}
 
-  main .pagination-loader-container {
-    background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg");
-    transition: all 0.3s;
-  }
+main .pagination-loader-container {
+  background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg");
+  transition: all 0.3s;
+}
 
-  main .gsc-loading-image {
-    background-image: url("https://github.githubassets.com/images/mona-loading-dark.gif");
-    transition: all 0.3s;
-  }
+main .gsc-loading-image {
+  background-image: url("https://github.githubassets.com/images/mona-loading-dark.gif");
+  transition: all 0.3s;
+}
 
-  /* Component styles inspired by main.css */
-  main .btn-plain {
-    background: none;
-    color: var(--btn-content);
-    transition: all 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    border: none;
-  }
+/* Component styles inspired by main.css */
+main .btn-plain {
+  background: none;
+  color: var(--btn-content);
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: none;
+}
 
-  main .btn-plain:hover {
-    background: var(--btn-plain-bg-hover);
-    color: var(--primary);
-  }
+main .btn-plain:hover {
+  background: var(--btn-plain-bg-hover);
+  color: var(--primary);
+}
 
-  main .btn-plain:active {
-    background: var(--btn-plain-bg-active);
-  }
+main .btn-plain:active {
+  background: var(--btn-plain-bg-active);
+}
 
-  main .btn-plain.scale-animation {
-    position: relative;
-    z-index: 0;
-    border: none;
-  }
+main .btn-plain.scale-animation {
+  position: relative;
+  z-index: 0;
+  border: none;
+}
 
-  main .btn-plain.scale-animation::before {
-    content: "";
-    position: absolute;
-    border-radius: inherit;
-    inset: 0;
-    transform: scale(0.85);
-    transition: all 0.3s ease-out;
-    z-index: -10;
-    border: none;
-  }
+main .btn-plain.scale-animation::before {
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+  inset: 0;
+  transform: scale(0.85);
+  transition: all 0.3s ease-out;
+  z-index: -10;
+  border: none;
+}
 
-  main .btn-plain.scale-animation:hover::before {
-    transform: scale(1);
-    background: var(--btn-plain-bg-hover);
-  }
+main .btn-plain.scale-animation:hover::before {
+  transform: scale(1);
+  background: var(--btn-plain-bg-hover);
+}
 
-  main .btn-plain.scale-animation:active::before {
-    background: var(--btn-plain-bg-active);
-  }
+main .btn-plain.scale-animation:active::before {
+  background: var(--btn-plain-bg-active);
+}
 
-  main .btn-plain.scale-animation.current-theme-btn::before {
-    transform: scale(1);
-    opacity: 1;
-    background: var(--btn-plain-bg-hover);
-  }
+main .btn-plain.scale-animation.current-theme-btn::before {
+  transform: scale(1);
+  opacity: 1;
+  background: var(--btn-plain-bg-hover);
+}
 
-  main .btn-plain.scale-animation.current-theme-btn {
-    color: var(--primary);
-    border: none;
-  }
+main .btn-plain.scale-animation.current-theme-btn {
+  color: var(--primary);
+  border: none;
+}
 
-  main .btn-regular {
-    background: var(--btn-regular-bg);
-    color: var(--btn-content);
-    transition: all 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-  }
+main .btn-regular {
+  background: var(--btn-regular-bg);
+  color: var(--btn-content);
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
 
-  main .btn-regular:hover {
-    background: var(--btn-regular-bg-hover);
-  }
+main .btn-regular:hover {
+  background: var(--btn-regular-bg-hover);
+}
 
-  main .btn-regular:active {
-    background: var(--btn-regular-bg-active);
-  }
+main .btn-regular:active {
+  background: var(--btn-regular-bg-active);
+}
 
-  main .link-underline {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-decoration-style: dashed;
-    text-decoration-color: var(--link-underline);
-    text-underline-offset: 0.25rem;
-    transition: all 0.3s;
-    border: none;
-  }
+main .link-underline {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-style: dashed;
+  text-decoration-color: var(--link-underline);
+  text-underline-offset: 0.25rem;
+  transition: all 0.3s;
+  border: none;
+}
 
-  main .link-underline:hover {
-    text-decoration-color: var(--link-hover);
-  }
+main .link-underline:hover {
+  text-decoration-color: var(--link-hover);
+}
 
-  main .link-underline:active {
-    text-decoration-color: var(--link-active);
-  }
+main .link-underline:active {
+  text-decoration-color: var(--link-active);
+}
 
-  main .dash-line {
-    position: relative;
-    border: none;
-  }
+main .dash-line {
+  position: relative;
+  border: none;
+}
 
-  main .dash-line::before {
-    content: "";
-    position: absolute;
-    width: 10%;
-    height: 100%;
-    left: calc(50% - 1px);
-    border-left: 2px dashed var(--line-color);
-    pointer-events: none;
-    transition: all 0.3s;
-    transform: translateY(-50%);
-    border: none;
-  }
+main .dash-line::before {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  left: calc(50% - 1px);
+  border-left: 2px dashed var(--line-color);
+  pointer-events: none;
+  transition: all 0.3s;
+  transform: translateY(-50%);
+  border: none;
+}
 
-  main ::selection {
-    background-color: var(--selection-bg);
-  }
+main ::selection {
+  background-color: var(--selection-bg);
 }
