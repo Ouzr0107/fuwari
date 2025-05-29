@@ -20,7 +20,9 @@
         script.dataset.reactionsEnabled = "1";
         script.dataset.emitMetadata = "0";
         script.dataset.inputPosition = "top";
-        script.dataset.theme = "https://imwzj.uk/giscus_theme.css";
+        script.dataset.theme = document.documentElement.classList.contains("dark")
+            ? "/preferred_color_scheme_dark.css"
+            : "/preferred_color_scheme_light.css";
         script.dataset.lang = "zh-CN";
         script.dataset.loading = "lazy";
         script.crossOrigin = "anonymous";
