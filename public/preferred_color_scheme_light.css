@@ -84,27 +84,49 @@ main {
   --color-primer-shadow-inset: 0 0 transparent;
   --color-scale-gray-1: #F5F2FA;
   --color-scale-blue-1: #b6e3ff;
-  --primary: #A18CD1; /* Aligned with --color-accent-fg */
-  --btn-plain-bg-hover: #F5F2FA; /* Aligned with a lighter shade */
-  --btn-plain-bg-active: #ECE7F2; /* Aligned with background */
-  --card-bg: #FFFFFF; /* Aligned with card background */
-  --float-panel-bg: #FFFFFF; /* Aligned with card background */
-  --btn-regular-bg: #FFFFFF; /* Aligned with card background */
-  --btn-regular-bg-hover: #F5F2FA; /* Aligned with a lighter shade */
-  --btn-regular-bg-active: #ECE7F2; /* Aligned with background */
-  --btn-content: #000000; /* Aligned with text color */
-  --link-underline: #A18CD1; /* Aligned with text color */
-  --link-hover: #B8A9D6; /* Slightly lighter purple for hover */
-  --link-active: #9A82C6; /* Slightly darker purple for active */
-  --selection-bg: #F5F2FA; /* Aligned with subtle background */
-  --line-color: #A18CD1; /* Aligned with text/lines */
-  --meta-divider: #666666; /* Aligned with muted text */
-  --deep-text: #000000; /* Aligned with primary text */
+  --primary: #A18CD1;
+  /* Aligned with --color-accent-fg */
+  --btn-plain-bg-hover: #F5F2FA;
+  /* Aligned with a lighter shade */
+  --btn-plain-bg-active: #ECE7F2;
+  /* Aligned with background */
+  --card-bg: #FFFFFF;
+  /* Aligned with card background */
+  --float-panel-bg: #FFFFFF;
+  /* Aligned with card background */
+  --btn-regular-bg: #FFFFFF;
+  /* Aligned with card background */
+  --btn-regular-bg-hover: #F5F2FA;
+  /* Aligned with a lighter shade */
+  --btn-regular-bg-active: #ECE7F2;
+  /* Aligned with background */
+  --btn-content: #000000;
+  /* Aligned with text color */
+  --link-underline: #A18CD1;
+  /* Aligned with text color */
+  --link-hover: #B8A9D6;
+  /* Slightly lighter purple for hover */
+  --link-active: #9A82C6;
+  /* Slightly darker purple for active */
+  --selection-bg: #F5F2FA;
+  /* Aligned with subtle background */
+  --line-color: #A18CD1;
+  /* Aligned with text/lines */
+  --meta-divider: #666666;
+  /* Aligned with muted text */
+  --deep-text: #000000;
+  /* Aligned with primary text */
 
   /*! Extensions from @primer/css/alerts/flash.scss */
   --color-social-reaction-bg-hover: var(--color-scale-gray-1);
   --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-1);
+}
+
+*,
+:after,
+:before {
   border: none;
+  box-sizing: border-box
 }
 
 main .pagination-loader-container {
@@ -128,18 +150,22 @@ main .btn-plain {
   position: relative;
   border: none;
 }
+
 main .btn-plain:hover {
   background: var(--btn-plain-bg-hover);
   color: var(--primary);
 }
+
 main .btn-plain:active {
   background: var(--btn-plain-bg-active);
 }
+
 main .btn-plain.scale-animation {
   position: relative;
   z-index: 0;
   border: none;
 }
+
 main .btn-plain.scale-animation::before {
   content: "";
   position: absolute;
@@ -150,18 +176,22 @@ main .btn-plain.scale-animation::before {
   z-index: -10;
   border: none;
 }
+
 main .btn-plain.scale-animation:hover::before {
   transform: scale(1);
   background: var(--btn-plain-bg-hover);
 }
+
 main .btn-plain.scale-animation:active::before {
   background: var(--btn-plain-bg-active);
 }
+
 main .btn-plain.scale-animation.current-theme-btn::before {
   transform: scale(1);
   opacity: 1;
   background: var(--btn-plain-bg-hover);
 }
+
 main .btn-plain.scale-animation.current-theme-btn {
   color: var(--primary);
   border: none;
@@ -176,9 +206,11 @@ main .btn-regular {
   justify-content: center;
   border: none;
 }
+
 main .btn-regular:hover {
   background: var(--btn-regular-bg-hover);
 }
+
 main .btn-regular:active {
   background: var(--btn-regular-bg-active);
 }
@@ -192,9 +224,11 @@ main .link-underline {
   transition: all 0.3s;
   border: none;
 }
+
 main .link-underline:hover {
   text-decoration-color: var(--link-hover);
 }
+
 main .link-underline:active {
   text-decoration-color: var(--link-active);
 }
@@ -203,6 +237,7 @@ main .dash-line {
   position: relative;
   border: none;
 }
+
 main .dash-line::before {
   content: "";
   position: absolute;
