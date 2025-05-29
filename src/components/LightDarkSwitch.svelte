@@ -38,8 +38,8 @@
 
     function changeGiscusTheme() {
         const theme = document.documentElement.classList.contains("dark")
-            ? "/preferred_color_scheme_dark.css"
-            : "/preferred_color_scheme_light.css";
+            ? "https://imwzj.uk/preferred_color_scheme_dark.css"
+            : "https://imwzj.uk/preferred_color_scheme_light.css";
 
         console.log("Giscus theme changed to", theme);
 
