@@ -17,7 +17,7 @@ import Comments from "../../components/widget/Comments.astro";
 
 export async function getStaticPaths() {
     const blogEntries = await getSortedPosts();
-    return blogEntries.map((entry) => ({
+    return blogEntries.map((entry: { slug: any; }) => ({
         params: { slug: entry.slug },
         props: { entry },
     }));
