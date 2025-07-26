@@ -1,4 +1,5 @@
 import type {
+	ExpressiveCodeConfig,
 	LicenseConfig,
 	LinksConfig,
 	NavBarConfig,
@@ -129,3 +130,9 @@ export const linksConfig: LinksConfig[] = [
 			"https://img.mileomni.com/m4vWN8HU6K5vWtaW.jpg",
 	},
 ];
+
+export const expressiveCodeConfig: ExpressiveCodeConfig = {
+	// Note: Some styles (such as background color) are being overridden, see the astro.config.mjs file.
+	// Please select a dark theme, as this blog theme currently only supports dark background color
+	theme: "github-dark",
+};
