@@ -122,7 +122,7 @@ main {
   --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-1);
 }
 
-*,
+*:not(blockquote),
 :after,
 :before {
   border: none;
@@ -253,10 +253,4 @@ main .dash-line::before {
 
 main ::selection {
   background-color: var(--selection-bg);
-}
-
-blockquote {
-  border-left: 4px solid var(--meta-divider);
-  padding-left: 1rem;
-  color: var(--deep-text);
 }
