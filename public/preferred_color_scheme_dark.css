@@ -125,7 +125,7 @@ main {
 *,
 :after,
 :before {
-  border: 0 #e5e7eb;
+  border: none;
   box-sizing: border-box
 }
 
@@ -253,4 +253,11 @@ main .dash-line::before {
 
 main ::selection {
   background-color: var(--selection-bg);
+}
+
+blockquote {
+  border-left: 4px solid var(--meta-divider);
+  padding-left: 1rem;
+  color: var(--deep-text);
+  opacity: 0.8;
 }
